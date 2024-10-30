@@ -13,7 +13,7 @@ const app= express() //store values from express to variable called app
 const PORT= process.env.PORT || 4000;
 
 dotenv.config();
-app.use(cors());
+app.use(cors())
 
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>console.log("MongoDB connected successfully"))
