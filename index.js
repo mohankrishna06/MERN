@@ -33,6 +33,6 @@ app.listen(PORT,()=>{
     console.log(`Server is started roii MKRu at ${PORT} `);
 });
 
-app.use('/home',(req,res)=>{
+app.use('/',(req,res)=>{
     res.send("<H1> Server Running MKR </H1>")
 })
