@@ -10,7 +10,7 @@ const path = require('path');
 
 const app= express() //store values from express to variable called app
 
-const PORT= 4000;
+const PORT= process.env.PORT || 4000;
 
 dotenv.config();
 ///app.use(cors());
